@@ -6,7 +6,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang><!--<![endif]-->
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="UTF-8">
-    <title>Hello World</title>
+    <title>Learn WebFlux</title>
 
     <meta name="author" content="xuedagong">
 
@@ -16,7 +16,7 @@
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
 
-    <link rel="canonical" href="http://yoursite.com/2019/06/13/hello-world/">
+    <link rel="canonical" href="http://yoursite.com/2019/06/30/Learn-WebFlux/">
 
     
         <link rel="alternate" href="/atom.xml" type="application/atom+xml">
@@ -102,37 +102,32 @@
         <div>
     <article class="hentry" role="article">
         <header>
-            <h1 class="entry-title">Hello World</h1>
+            <h1 class="entry-title">Learn WebFlux</h1>
             <p class="meta">
-                <time datetime="2019-06-13T14:50:41.260Z" data-updated="true">Thu Jun 13 2019</time>
+                <time datetime="2019-06-30T13:09:47.000Z" data-updated="true">Sun Jun 30 2019</time>
             </p>
         </header>
         <div class="entry-content">
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<a id="more"></a>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+            <h1 id="事件驱动"><a href="#事件驱动" class="headerlink" title="事件驱动"></a>事件驱动</h1><h2 id="异步非阻塞-无需引入线程"><a href="#异步非阻塞-无需引入线程" class="headerlink" title="异步非阻塞 无需引入线程"></a>异步非阻塞 无需引入线程</h2><h2 id="推拉机制的实现"><a href="#推拉机制的实现" class="headerlink" title="推拉机制的实现"></a>推拉机制的实现</h2><p>  数据提供方推送 push<br>  处理方拉取（pull）数据</p>
+<p>#核心概念</p>
+<p>##1.异步数据流<br>   功能 集合表象<br>   单向流动<br>   时间+序列</p>
+<h2 id="2-数据流操作"><a href="#2-数据流操作" class="headerlink" title="2.数据流操作"></a>2.数据流操作</h2><p> 功能：操作数据 过滤，合并，映射<br> 产生新的流</p>
+<p>#观察者模式</p>
+<p> ##被观察者</p>
+<p> ##关注主题和事件</p>
+<p>#框架实现<br> RxJava<br> Reactor<br> Vert.x<br> Java 9 FLow APi<br> 应用场景<br>  异步非租塞Rest API<br>  响应式web的开发</p>
+<p>#webflux<br>    reactive web 非阻塞</p>
 
         </div>
         <footer>
             <p class="meta">
                 <span class="byline author vcard">Posted by <span class="fn">xuedagong</span></span>
-                <time datetime="2019-06-13T14:50:41.260Z" data-updated="true">Thu Jun 13 2019</time>
+                <time datetime="2019-06-30T13:09:47.000Z" data-updated="true">Sun Jun 30 2019</time>
                 
             </p>
             <div class="sharing">
     
-        <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Hello%20World">
+        <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Learn%20WebFlux">
             Tweet
         </a>
     
@@ -140,9 +135,9 @@
 
             <p class="meta">
                 
-                <a class="basic-alignment left" href="/2019/06/14/一切归零/index.html" title="Previous Post: 一切归零">« 一切归零</a>
-                
 
+                
+                <a class="basic-alignment right" href="/2019/06/14/一切归零/index.html" title="Previous Post: 一切归零">一切归零 »</a>
                 
             </p>
         </footer>
